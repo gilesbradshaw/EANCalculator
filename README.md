@@ -9,3 +9,7 @@ grunt test
 grunt
 
 and go to http://localhost:3000
+
+rest interface..
+
+GET /calculator/add/1/1
