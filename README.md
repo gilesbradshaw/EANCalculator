@@ -13,3 +13,5 @@ and go to http://localhost:3000
 rest interface..
 
 GET /calculator/add/1/1
+
+now updated to be an EARN calculator - with React
