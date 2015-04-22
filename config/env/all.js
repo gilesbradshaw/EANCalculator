@@ -26,7 +26,9 @@ module.exports = {
 				'public/lib/angular-ui-router/release/angular-ui-router.js',
 				'public/lib/angular-ui-utils/ui-utils.js',
 				'public/lib/angular-bootstrap/ui-bootstrap-tpls.js',
-				'public/lib/react/react.min.js'
+				'public/lib/react/react.min.js',
+				'public/lib/ngReact/ngReact.min.js'
+
 			]
 		},
 		css: [

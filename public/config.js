@@ -4,7 +4,7 @@
 var ApplicationConfiguration = (function() {
 	// Init module configuration options
 	var applicationModuleName = 'mean-calculator';
-	var applicationModuleVendorDependencies = ['ngResource', 'ui.router'];
+	var applicationModuleVendorDependencies = ['ngResource', 'ui.router', 'react'];
 
 	// Add a new vertical module
 	var registerModule = function(moduleName, dependencies) {
