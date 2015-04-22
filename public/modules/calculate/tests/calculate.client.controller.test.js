@@ -8,7 +8,6 @@
 			scope,
 			$httpBackend,
 			$stateParams,
-			$location,
 			$controller;
 
 		// The $resource service augments the response object with methods for updating and deleting the resource.
@@ -36,14 +35,13 @@
 		// The injector ignores leading and trailing underscores here (i.e. _$httpBackend_).
 		// This allows us to inject a service but then attach it to a variable
 		// with the same name as the service.
-		beforeEach(inject(function(_$controller_, $rootScope, _$location_, _$stateParams_, _$httpBackend_) {
+		beforeEach(inject(function(_$controller_, $rootScope,  _$stateParams_, _$httpBackend_) {
 			// Set a new global scope
 			scope = $rootScope.$new();
 
 			// Point global variables to injected services
 			$stateParams = _$stateParams_;
 			$httpBackend = _$httpBackend_;
-			$location = _$location_;
 			$controller= _$controller_;
 			
 		}));
@@ -54,7 +52,7 @@
 			$stateParams.operand1=1;
 			$stateParams.operand2=2;
 			// Initialize the Calculator controller.
-			CalculateController = $controller('CalculateController', {
+			CalculateController = $controller('CalculateAnswerController', {
 				$scope: scope
 			});
 
@@ -66,7 +64,7 @@
 			$httpBackend.flush();
 
 			// Test scope value
-			expect(scope.result).toEqualData(result);
+			expect(scope.calculation.result).toEqualData(999);
 		}));
 
 		

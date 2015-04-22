@@ -1,22 +1,11 @@
 <div class="container" >
-<div class='row'>
-	<h1>
-		<a href="/#!/">EAN Calculator</a>
-	</h1>
-</div>	
+	<div class='row'>
+		<h1>
+			<a href="/#!/">EARN Calculator</a>
+		</h1>
+	</div>	
 
-<div ui-view></div>
-
-<div class='row'>
-	<input  ng-model='qOperand1' type='text'/> +
-	<input ng-model='qOperand2' type='text'/>
-	<a ui-sref="calculate.add({operand1:qOperand1, operand2:qOperand2})">=</a>
-</div>
-
-
-
-
-
-
-
+	<div ui-view></div>
+	<react-component name="QuestionComponent" props="calculation"/>
+	
 </div>

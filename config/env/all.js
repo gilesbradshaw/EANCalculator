@@ -2,9 +2,9 @@
 
 module.exports = {
 	app: {
-		title: 'MEAN Calculator',
+		title: 'EARN Calculator',
 		description: 'A ridiculous calculator',
-		keywords: 'MongoDB, Express, AngularJS, Node.js'
+		keywords: 'Express, AngularJS, React, Node.js'
 	},
 	port: process.env.PORT || 3000,
 	templateEngine: 'swig',
